@@ -1,3 +1,4 @@
+ <%= render "layouts/banner"%>
  <h1>lists</h1>
   <table>
     <% @lists.each do |list| %>
@@ -10,4 +11,3 @@
   </table>
 
   <button><%=link_to "New list", new_list_path%></button>
- 
