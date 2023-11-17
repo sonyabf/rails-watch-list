@@ -1,13 +1,4 @@
  <%= render "layouts/banner"%>
  <h1>lists</h1>
-  <table>
-    <% @lists.each do |list| %>
-      <tr>
-        <td>
-          <%= link_to list.name, list_path(list) %><br>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-
+ <%= render "layouts/cardlist"%>
   <button><%=link_to "New list", new_list_path%></button>
